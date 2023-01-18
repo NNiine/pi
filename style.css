@@ -1,0 +1,190 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(82,230,237);
+    background: linear-gradient(324deg, rgba(82,230,237,1) 0%, rgba(6,169,180,1) 26%, rgba(7,151,182,1) 47%, rgba(14,0,195,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px 25px ;
+
+    margin-top: 9%;
+    margin-left: 50%;
+
+    overflow: hidden;
+    transform: translate(-50%, -20%); /* move em seu proprio eixo */ 
+    box-shadow: 15px 15px 30px -5px;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #FFF;
+    margin: 16px;
+    border-radius: 10px;
+    cursor: pointer; /* quando passar por cima de algo selecionavel, altera o cursor do mouse */
+    transition: .3s;
+}
+
+.bar:hover {
+    background-color: #3DEBB0;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* quando o input estiver checked ela tenha uma margin */ 
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+
+/* descrição dos produtos */ 
+.maindescricao {
+
+    width: 935px;
+    height: 200px;
+
+    display: flex;
+    margin-left: 25.5%;
+
+
+    outline-style: solid;
+    outline-color: rgb(247, 245, 245);
+
+    margin-top: 40px;
+}
+.descricao {
+
+    width: 700px;
+    height: 200px;
+
+    display: flex;
+
+}
+
+.descricao img {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.descricao h3 {
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.carroseldescricao {
+
+    background-color: beige;
+    width: 235px;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carroseldescricao img {
+    margin-top: -16px;
+    margin-left: -40px;
+}
+
+.carroseldescricao ul {
+    display: flex;
+    list-style: none;
+    width: 235px;
+    height: 200px;
+}
+
+.carroseldescricao li {
+    position: relative;
+    animation: dir 15s infinite ease-out;
+}
+
+@keyframes dir {
+    0%{left: 0px;}
+    15%{left: 0px;}
+
+    30%{left: -235px;}
+    50%{left: -235px;}
+
+    60%{left: -470px;}
+    90%{left: -470px;}
+
+    100%{left: 0px;}
+}
+
+.teste {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+
+    color: purple;
+    font-style: oblique;
+    font-size: 100px;
+}
+
+.comentarios {
+    width: 600px;
+    height: 570px;
+
+    margin-left: 50.60vh;
+
+    margin-top: 50px;
+    outline: solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
