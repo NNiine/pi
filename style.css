@@ -93,7 +93,7 @@ input {
     height: 200px;
 
     display: flex;
-    margin-left: 25.5%;
+    margin-left: 17.5%;
 
 
     outline-style: solid;
@@ -156,6 +156,82 @@ input {
     50%{left: -235px;}
 
     60%{left: -470px;}
+    90%{left: -470px;}
+
+    100%{left: 0px;}
+}
+
+
+/* descrição dos produtos 2*/ 
+.maindescricao2 {
+
+    width: 935px;
+    height: 200px;
+
+    display: flex;
+    margin-left: 17.5%;
+
+
+    outline-style: solid;
+    outline-color: rgb(247, 245, 245);
+
+    margin-top: 40px;
+}
+.descricao2 {
+
+    width: 700px;
+    height: 200px;
+
+    display: flex;
+
+}
+
+.descricao2 img {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.descricao2 h3 {
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.carroseldescricao2 {
+
+    background-color: beige;
+    width: 235px;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carroseldescricao2 img {
+    margin-top: -16px;
+    margin-left: -40px;
+}
+
+.carroseldescricao2 ul {
+    display: flex;
+    list-style: none;
+    width: 235px;
+    height: 200px;
+}
+
+.carroseldescricao2 li {
+    position: relative;
+    animation: esq 15s infinite ease-out;
+}
+
+@keyframes esq {
+    0%{left: 0px;}
+    19%{left: 0px;}
+
+    30%{left: -235px;}
+    50%{left: -235px;}
+
+    80%{left: -470px;}
     90%{left: -470px;}
 
     100%{left: 0px;}
