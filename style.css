@@ -3,10 +3,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(82,230,237);
-    background: linear-gradient(324deg, rgba(82,230,237,1) 0%, rgba(6,169,180,1) 26%, rgba(7,151,182,1) 47%, rgba(14,0,195,1) 100%);
     display: flex;
     flex-direction: column;
+    background-color: rgb(130, 124, 124);
 }
 
 .content {
@@ -19,7 +18,7 @@ body {
 
     overflow: hidden;
     transform: translate(-50%, -20%); /* move em seu proprio eixo */ 
-    box-shadow: 15px 15px 30px -5px;
+    box-shadow: 0px 25px 30px -15px;
 }
 
 .navigation {
@@ -94,31 +93,30 @@ input {
 
     display: flex;
     margin-left: 17.5%;
-
-
-    outline-style: solid;
-    outline-color: rgb(247, 245, 245);
-
     margin-top: 40px;
+
+    outline-color: rgb(245, 6, 6);
+    background-color: rgba(239, 253, 254, 0.569);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .descricao {
-
     width: 700px;
     height: 200px;
 
     display: flex;
-
 }
 
 .descricao img {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
     border-radius: 10px;
 }
 
 .descricao h3 {
-    margin-top: 100px;
+    margin-top: 65px;
     margin-left: 15px;
+    
 }
 
 .carroseldescricao {
@@ -172,9 +170,9 @@ input {
     margin-left: 17.5%;
 
 
-    outline-style: solid;
-    outline-color: rgb(247, 245, 245);
-
+    background-color: rgba(239, 253, 254, 0.569);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin-top: 40px;
 }
 .descricao2 {
@@ -188,12 +186,12 @@ input {
 
 .descricao2 img {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
     border-radius: 10px;
 }
 
 .descricao2 h3 {
-    margin-top: 100px;
+    margin-top: 65px;
     margin-left: 15px;
 }
 
@@ -226,7 +224,7 @@ input {
 
 @keyframes esq {
     0%{left: 0px;}
-    19%{left: 0px;}
+    15%{left: 0px;}
 
     30%{left: -235px;}
     50%{left: -235px;}
@@ -247,11 +245,16 @@ input {
     font-size: 100px;
 }
 
+.maincomentarios {
+    display: flex;
+    margin-top: 25px;
+}
+
 .comentarios {
     width: 600px;
     height: 570px;
 
-    margin-left: 50.60vh;
+    margin-left: 32vh;
 
     margin-top: 50px;
     outline: solid white;
@@ -263,4 +266,82 @@ input {
 .comentarios img {
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 10px;
 }
+
+#textcomentarios {
+    height: 100px;
+    width: 410px;
+
+    margin-left: 15px;
+    margin-bottom: 9px;
+}
+.avaliacao {
+
+    width: 250px;
+    height: 300px;
+
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+    outline-color: rgb(184, 23, 23);
+
+    background-color: #1f21204c;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliacao img {
+    margin-top: 30px;
+}
+
+.estrelas {
+    width: 204px;
+
+}
+
+#add {
+    padding: 17px;
+    padding-left: 55px;
+    width: 300px;
+    border: 1px solid #f5f5f5;
+    font-size: 13px;
+    color: gray;
+    background-image: url('http://i47.tinypic.com/r02vbq.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: 0;
+  }
+
+  #g-search-button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -22px;
+    top: 3px;
+  
+    background-color: black;  /* Replace with your own image */
+  }
+
+  .estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa{
+    font-size: 2.5em;
+
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: rgba(0, 213, 255, 0.808);
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+    
+  }
+
+  .fa:hover { 
+    background-color: #020806;
+  }
